@@ -9,13 +9,9 @@ class PantallaClases : AppCompatActivity() {
         val binding = clases.inflate(layoutInflater)
         setContentView(binding.root)
 
-
-
         binding.bElRElfo.setOnClickListener {
             binding.imgElRaza.setImageResource(R.drawable.jesucristo_elfo)
         }
-
-
 
         binding.bElREnano.setOnClickListener {
             binding.imgElRaza.setImageResource(R.drawable.jesucristoenano)
