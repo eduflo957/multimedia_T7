@@ -3,33 +3,34 @@ package com.example.multimedia_t7
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.multimedia_t7.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-
-        val binding = clases.inflate(layoutInflater)
+        val binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.bElPGuerrero.setOnClickListener {
-            binding.imgElClase.setImageResource(R.drawable.multimedia_t7_berserker)
+        binding.buttonBerseker.setOnClickListener {
+            binding.imageView.setImageResource(R.drawable.multimedia_t7_berserker_2)
         }
 
-        binding.bElPLadron.setOnClickListener {
-            binding.imgElClase.setImageResource(R.drawable.multimedia_t7_guerrero)
+        binding.buttonGuerrero.setOnClickListener {
+            binding.imageView.setImageResource(R.drawable.multimedia_t7_guerrero_2)
         }
 
-        binding.bElPMago.setOnClickListener {
-            binding.imgElClase.setImageResource(R.drawable.multimedia_t7_ladron)
+        binding.buttonLadron.setOnClickListener {
+            binding.imageView.setImageResource(R.drawable.multimedia_t7_ladron_2)
         }
 
-        binding.bElPBerserker.setOnClickListener {
-            binding.imgElClase.setImageResource(R.drawable.multimedia_t7_mago)
+        binding.buttonMago.setOnClickListener {
+            binding.imageView.setImageResource(R.drawable.multimedia_t7_mago_2)
         }
 
-        binding.bElPInicio.setOnClickListener {
-            val intent = Intent(this, PantallaClases::class.java)
+        binding.buttonInicio.setOnClickListener {
+            val intent = Intent(this, pantalla_vacia::class.java)
             startActivity(intent)
         }
     }

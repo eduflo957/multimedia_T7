@@ -1,11 +1,11 @@
 package com.example.multimedia_t7
 
-import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
 
-class PantallaClases : AppCompatActivity() {
+class pantalla_vacia : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.pagina_vacia)
+        setContentView(R.layout.activity_pantalla_vacia)
     }
 }
