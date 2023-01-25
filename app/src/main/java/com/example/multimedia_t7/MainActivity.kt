@@ -6,10 +6,9 @@ import android.os.Bundle
 import com.example.multimedia_t7.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
-
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        //Aquí en el ActivityRazasBinding llamo al binding
         val binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
