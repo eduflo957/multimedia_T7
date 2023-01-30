@@ -29,7 +29,9 @@ class razas : AppCompatActivity() {
         }
 
         binding.buttonInicioRazas.setOnClickListener {
-            val intent = Intent(this, pantalla_vacia::class.java)
+            val intent = Intent(this, pantallaRazasMasClases::class.java)
+
+            intent.putExtra("idFotoRaza", binding.imageViewInicioRazas.id)
             startActivity(intent)
         }
     }

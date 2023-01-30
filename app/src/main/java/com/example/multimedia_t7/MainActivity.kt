@@ -9,11 +9,15 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         //Aquí en el ActivityRazasBinding llamo al binding
+        //El binding está en el gradle
         val binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        var nombreClase = ""
+
         binding.buttonBerseker.setOnClickListener {
             binding.imageView.setImageResource(R.drawable.multimedia_t7_berserker_2)
+            nombreClase="multimedia_t7_berserker_2"
         }
 
         binding.buttonGuerrero.setOnClickListener {
@@ -29,7 +33,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.buttonInicio.setOnClickListener {
-            val intent = Intent(this, pantalla_vacia::class.java)
+            val intent = Intent(this, razas::class.java)
             startActivity(intent)
         }
     }

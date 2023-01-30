@@ -30,6 +30,7 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    //El viewBinding está activado con esta parte del código.
     viewBinding {
         enabled = true
     }
