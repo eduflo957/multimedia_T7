@@ -24,7 +24,7 @@
         tools:layout_editor_absoluteY="51dp" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/fotoRaza"
         android:layout_width="200dp"
         android:layout_height="200dp"
         app:srcCompat="@drawable/multimedia_t7_inicio_razas_2"
@@ -32,7 +32,7 @@
         tools:layout_editor_absoluteY="118dp" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/fotoClase"
         android:layout_width="200dp"
         android:layout_height="200dp"
         app:srcCompat="@drawable/multimedia_t7_inicio2"
