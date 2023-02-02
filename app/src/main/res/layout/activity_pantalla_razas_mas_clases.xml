@@ -12,32 +12,44 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Nombre: "
-        tools:layout_editor_absoluteX="126dp"
-        tools:layout_editor_absoluteY="64dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/editNombre"
+        app:layout_constraintHorizontal_bias="0.836"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.136" />
 
     <EditText
         android:id="@+id/editNombre"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Indica tu nombre"
-        tools:layout_editor_absoluteX="192dp"
-        tools:layout_editor_absoluteY="51dp" />
+        android:layout_width="143dp"
+        android:layout_height="38dp"
+        android:layout_marginEnd="64dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.126" />
 
     <ImageView
         android:id="@+id/fotoRaza"
         android:layout_width="200dp"
         android:layout_height="200dp"
-        app:srcCompat="@drawable/multimedia_t7_inicio_razas_2"
-        tools:layout_editor_absoluteX="210dp"
-        tools:layout_editor_absoluteY="118dp" />
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499"
+        app:srcCompat="@drawable/multimedia_t7_inicio_razas_2" />
 
     <ImageView
         android:id="@+id/fotoClase"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        app:srcCompat="@drawable/multimedia_t7_inicio2"
-        tools:layout_editor_absoluteX="-1dp"
-        tools:layout_editor_absoluteY="118dp" />
+        android:layout_width="195dp"
+        android:layout_height="207dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/fotoRaza"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499"
+        app:srcCompat="@drawable/multimedia_t7_inicio2" />
 
     <TextView
         android:id="@+id/valoresPorDefecto"
@@ -46,7 +58,11 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Valores por defecto"
-        tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="386dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.785" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

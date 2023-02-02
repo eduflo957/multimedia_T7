@@ -12,32 +12,33 @@ class razas : AppCompatActivity() {
         val binding = ActivityRazasBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        var enviarImagen = R.drawable.multimedia_t7_inicio2
+        var enviarImagenRaza = R.drawable.multimedia_t7_inicio_razas_2
 
         binding.buttonElfo.setOnClickListener {
             binding.imageViewInicioRazas.setImageResource(R.drawable.multimedia_t7_elfo_razas_2)
-            enviarImagen = R.drawable.multimedia_t7_elfo_razas_2
+            enviarImagenRaza = R.drawable.multimedia_t7_elfo_razas_2
         }
 
         binding.buttonEnano.setOnClickListener {
             binding.imageViewInicioRazas.setImageResource(R.drawable.multimedia_t7_enano_razas_2)
-            enviarImagen = R.drawable.multimedia_t7_enano_razas_2
+            enviarImagenRaza = R.drawable.multimedia_t7_enano_razas_2
         }
 
         binding.buttonGoblin.setOnClickListener {
             binding.imageViewInicioRazas.setImageResource(R.drawable.multimedia_t7_goblin_razas_2)
-            enviarImagen = R.drawable.multimedia_t7_goblin_razas_2
+            enviarImagenRaza = R.drawable.multimedia_t7_goblin_razas_2
         }
 
         binding.buttonHumano.setOnClickListener {
             binding.imageViewInicioRazas.setImageResource(R.drawable.multimedia_t7_humano_razas_2)
-            enviarImagen = R.drawable.multimedia_t7_humano_razas_2
+            enviarImagenRaza = R.drawable.multimedia_t7_humano_razas_2
         }
 
         binding.buttonInicioRazas.setOnClickListener {
             val intent = Intent(this, pantallaRazasMasClases::class.java)
-            intent.putExtra("enviarImagen", enviarImagen)
+            intent.putExtra("enviarImagenRaza", enviarImagenRaza)
             startActivity(intent)
         }
+
     }
 }

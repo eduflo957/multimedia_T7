@@ -20,14 +20,14 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".razas"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".razas"
+            android:name=".MainActivity"
             android:exported="true">
 
             <!-- Se va a iniciar primero el que tenga este intent-filter -->

@@ -13,27 +13,31 @@ class MainActivity : AppCompatActivity() {
         val binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        var nombreClase = ""
+        var enviarImagenClase = R.drawable.multimedia_t7_inicio2
 
         binding.buttonBerseker.setOnClickListener {
             binding.imageView.setImageResource(R.drawable.multimedia_t7_berserker_2)
-            nombreClase="multimedia_t7_berserker_2"
+            enviarImagenClase = R.drawable.multimedia_t7_berserker_2
         }
 
         binding.buttonGuerrero.setOnClickListener {
             binding.imageView.setImageResource(R.drawable.multimedia_t7_guerrero_2)
+            enviarImagenClase = R.drawable.multimedia_t7_guerrero_2
         }
 
         binding.buttonLadron.setOnClickListener {
             binding.imageView.setImageResource(R.drawable.multimedia_t7_ladron_2)
+            enviarImagenClase = R.drawable.multimedia_t7_ladron_2
         }
 
         binding.buttonMago.setOnClickListener {
             binding.imageView.setImageResource(R.drawable.multimedia_t7_mago_2)
+            enviarImagenClase = R.drawable.multimedia_t7_mago_2
         }
 
         binding.buttonInicio.setOnClickListener {
             val intent = Intent(this, razas::class.java)
+            intent.putExtra("enviarImagenClase", enviarImagenClase)
             startActivity(intent)
         }
     }

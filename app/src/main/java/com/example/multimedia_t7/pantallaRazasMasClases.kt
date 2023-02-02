@@ -12,14 +12,16 @@ class pantallaRazasMasClases : AppCompatActivity() {
         val binding = ActivityPantallaRazasMasClasesBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val bundle = intent.extras
-        val enviarImagen = bundle?.getString("enviarImagen")
 
-        binding.fotoClase.setImageResource(enviarImagen)
+        var fotoClase = findViewById<ImageView>(R.id.fotoClase)
+        var fotoTraidaClase = intent.getIntExtra("enviarImagenClase", 0)
+        fotoClase.setImageResource(fotoTraidaClase)
+
+
+        var fotoRaza = findViewById<ImageView>(R.id.fotoRaza)
+        var fotoTraidaRaza = intent.getIntExtra("enviarImagenRaza", 0)
+        fotoRaza.setImageResource(fotoTraidaRaza)
 
     }
 }
 
-private fun ImageView.setImageResource(enviarImagen: String?) {
-
-}
