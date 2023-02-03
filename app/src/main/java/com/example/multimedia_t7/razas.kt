@@ -13,6 +13,7 @@ class razas : AppCompatActivity() {
         setContentView(binding.root)
 
         var enviarImagenRaza = R.drawable.multimedia_t7_inicio_razas_2
+        var enviarImagenClase = intent.getIntExtra("enviarImagenClase", 0)
 
         binding.buttonElfo.setOnClickListener {
             binding.imageViewInicioRazas.setImageResource(R.drawable.multimedia_t7_elfo_razas_2)
@@ -37,6 +38,8 @@ class razas : AppCompatActivity() {
         binding.buttonInicioRazas.setOnClickListener {
             val intent = Intent(this, pantallaRazasMasClases::class.java)
             intent.putExtra("enviarImagenRaza", enviarImagenRaza)
+            intent.putExtra("enviarImagenClase", enviarImagenClase)
+
             startActivity(intent)
         }
 
