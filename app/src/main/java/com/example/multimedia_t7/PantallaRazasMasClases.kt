@@ -3,10 +3,9 @@ package com.example.multimedia_t7
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
-import com.example.multimedia_t7.databinding.ActivityMainBinding
 import com.example.multimedia_t7.databinding.ActivityPantallaRazasMasClasesBinding
 
-class pantallaRazasMasClases : AppCompatActivity() {
+class PantallaRazasMasClases : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val binding = ActivityPantallaRazasMasClasesBinding.inflate(layoutInflater)
@@ -21,6 +20,8 @@ class pantallaRazasMasClases : AppCompatActivity() {
         var fotoRaza = findViewById<ImageView>(R.id.fotoRaza)
         var fotoTraidaRaza = intent.getIntExtra("enviarImagenRaza", 0)
         fotoRaza.setImageResource(fotoTraidaRaza)
+
+        binding.valoresPorDefecto.text = personaje1.toString()
 
     }
 }

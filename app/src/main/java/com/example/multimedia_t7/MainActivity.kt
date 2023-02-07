@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.buttonInicio.setOnClickListener {
-            val intentClase = Intent(this, razas::class.java)
+            val intentClase = Intent(this, Razas::class.java)
             intentClase.putExtra("enviarImagenClase", enviarImagenClase)
             startActivity(intentClase)
         }

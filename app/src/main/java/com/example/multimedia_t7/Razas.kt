@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.multimedia_t7.databinding.ActivityRazasBinding
 
-class razas : AppCompatActivity() {
+class Razas : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         //Aquí en el ActivityRazasBinding llamo al binding
@@ -36,7 +36,7 @@ class razas : AppCompatActivity() {
         }
 
         binding.buttonInicioRazas.setOnClickListener {
-            val intent = Intent(this, pantallaRazasMasClases::class.java)
+            val intent = Intent(this, PantallaRazasMasClases::class.java)
             intent.putExtra("enviarImagenRaza", enviarImagenRaza)
             intent.putExtra("enviarImagenClase", enviarImagenClase)
 
