@@ -16,6 +16,6 @@ class Personaje {
     }
 
     override fun toString(): String {
-        return "Personaje(fuerza=$fuerza, defensa=$defensa \r tamMochila=$tamMochila, vida=$vida, monedero=$monedero)"
+        return "Personaje(fuerza=$fuerza, defensa=$defensa, tamMochila=$tamMochila, vida=$vida, monedero=$monedero)"
     }
 }

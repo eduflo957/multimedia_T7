@@ -22,7 +22,5 @@ class PantallaRazasMasClases : AppCompatActivity() {
         fotoRaza.setImageResource(fotoTraidaRaza)
 
         binding.valoresPorDefecto.text = personaje1.toString()
-
     }
 }
-
